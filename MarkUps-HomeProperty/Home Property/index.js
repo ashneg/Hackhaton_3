@@ -29,7 +29,9 @@ var rootRef = firebase.database().ref().child("seed");
 
 		//alert(seed);	
 		if(seed == seed_name){
-		alert(seed_mos);	}
+	window.alert( "Seed Found =  " +seed_name + "   seed Moisture = " + seed_mos);
+		
+		}
 	//window.alert("seed found=  "+ seed_name +  "  seed Moisture= "+ seed_mos );
 
 		}
