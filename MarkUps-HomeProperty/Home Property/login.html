@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styl.css" />
+  
+ 
+  
+</head>
+<body >
+
+
+
+  <div id="login_div" class="main-div">
+    <h3>Login to the website </h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to our website You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC4rCaq-IiCPgijGfMXZsnC17JwUxlMN0c",
+    authDomain: "hackathonlogin-88f7c.firebaseapp.com",
+    databaseURL: "https://hackathonlogin-88f7c.firebaseio.com",
+    projectId: "hackathonlogin-88f7c",
+    storageBucket: "hackathonlogin-88f7c.appspot.com",
+    messagingSenderId: "241956476616"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="js/inde.js"></script>
+
+</body>
+</html>
