@@ -22,13 +22,15 @@ var rootRef = firebase.database().ref().child("seed");
 		{
 		var seed_name=snap.child("seed_name").val();
 			var seed_mos= snap.child("seed_mos").val();
-		
-console.log(seed_name);
+		var seed= document.getElementById("mainText").value;
+//console.log(seed_name);
 
     //   $("#table_body").append("   " +seed_name + "  "+seed_mos+  )
 
-			
-	window.alert("seed found=  "+ seed_name +  "  seed Moisture= "+ seed_mos );
+		//alert(seed);	
+		if(seed == seed_name){
+		alert(seed_mos);	}
+	//window.alert("seed found=  "+ seed_name +  "  seed Moisture= "+ seed_mos );
 
 		}
 	
