@@ -9,6 +9,8 @@ function signup(){
   var errorCode = error.code;
   var errorMessage = error.message;
   // ...
+ // alert(errorMessage);
 });
-	  alert("Errors");
+	  alert("Account created ");
+	  
   }
